@@ -23,5 +23,12 @@ console.log(person.age)
 console.log(person.name)
 console.log("my name is haro" + person.name)
 
-// 
+
 console.log("gjsdjjsdljdsjjsd;ljgds")
+
+
+// 
+const  v= 10
+const w = 33
+const add = v + w
+console.log(add)
