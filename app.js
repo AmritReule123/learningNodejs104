@@ -23,4 +23,5 @@ console.log(person.age)
 console.log(person.name)
 console.log("my name is haro" + person.name)
 
-
+// 
+console.log("gjsdjjsdljdsjjsd;ljgds")
