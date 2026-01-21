@@ -28,7 +28,11 @@ console.log("gjsdjjsdljdsjjsd;ljgds")
 
 
 // 
-const  v= 10
-const w = 33
-const add = v + w
-console.log(add)
+// const  v= 10
+// const w = 33
+// const add = v + w
+// console.log(add)
+
+
+const fruits = ["mango", "banana", "apple"]
+console.log(fruits[1])
