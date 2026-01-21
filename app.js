@@ -34,5 +34,6 @@ console.log("gjsdjjsdljdsjjsd;ljgds")
 // console.log(add)
 
 
+
 const fruits = ["mango", "banana", "apple"]
 console.log(fruits[1])
