@@ -1,39 +1,44 @@
+const app = require("express")()
 
-// const maa change garna meldaina 
-const a = 10
-const b = 20
-const sum = a + b
-console.log(sum)
-console.log("i am a user" )
+//Alternative 
+//const express = require("express)
+//cost app = express()
 
 
-// Array
-const numbers =  [10 , 20, 40]
-// console.log(numbers[1])
-console.log(numbers.length)
+// request and response Arrow function
+// app.get("/", (req,res)=>{
+//     res.send("this is  a error function in node js ")
+// })
+
+// app.listen(2000, (req,res)=>{
+// console.log("nodejs is a permant language")
+// })
 
 
-// Object 
-const person = {
-    name : "hari",
-    age : 30,
-    rollno: 12
-}
-console.log(person.age)     
-console.log(person.name)
-console.log("my name is haro" + person.name)
+// request and response normal function
+// app.get("/", (hello,bye)=>{
+//     bye.send("this is a new metod used in node js")
+// })
+
+// app.get("/hero")
 
 
-console.log("gjsdjjsdljdsjjsd;ljgds")
+// // 2000 number ko room chae use gar  yo project run garna
+// app.listen(3000,(req,res)=>{
+//     console.log("i am a node js running in 3000 room")
+//     })
 
 
-// 
-// const  v= 10
-// const w = 33
-// const add = v + w
-// console.log(add)
+// home route 
+app.get("/", (req,res) => {
+    res.send("this is a home route request!")
+})
 
+// hero route 
+app.get("/hero", (req,res) => {
+})
 
-
-const fruits = ["mango", "banana", "apple"]
-console.log(fruits[1])
+// server 
+app.listen(3000, () =>{
+    console.log("Enter any change your code automatically 300")
+})

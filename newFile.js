@@ -1,21 +1,17 @@
-const a = 10
-const b = 20
-console.log("Sum =", a + b)
+const app = require ("express")()
 
-// Array
-const numbers = [10, 20, 40]
-console.log("Array length =", numbers.length)
 
-// Object
-const person = {
-  name: "Hari",
-  age: 30,
-  rollno: 12
-}
+// home route 
+app.get("/", (req,res) =>{
+    res.send("i am begginers freindley ")
+})
 
-console.log(`My name is ${person.name}`)
-console.log(`Age is ${person.age}`)
+// hero route 
+app.get("/hero", (req,res) =>{
+    res.send("make a complete this code runing")
+})
 
-// Fruits
-const fruits = ["mango", "banana", "apple"]
-console.log("Second fruit:", fruits[1])
+// server
+app.listen(4000, () =>{
+    console.log("not a  a user only coder ")
+})
