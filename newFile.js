@@ -64,17 +64,24 @@
 // })
 
 
-const app = require("express")()
+const express = require("express")
+const app = express() 
 
-// home route
-app.get("/", (req,res) =>{
-    res.json({
-        manish: "mo loe browser maa khola"
-        
+
+// home route (optional)
+app.get("/", (req, res) => {
+    res.send("Home page")
+})
+
+// about route (JSON response)
+app.get("/about", (req, res) => {
+    res.status(200).json({
+        status: 200,
+        message: "You are in about page"
     })
 })
 
-//server
-app.listen(1021, () =>{
-    console.log("i am a ruuniiing code!")
+// server
+app.listen(2000, () => {
+    console.log("Server running on http://localhost:2000")
 })

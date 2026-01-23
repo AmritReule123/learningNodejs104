@@ -1,4 +1,4 @@
-const app = require("express")()
+// const app = require("express")()
 
 //Alternative 
 //const express = require("express)
@@ -51,18 +51,46 @@ const app = require("express")()
 
 
 //JSON USED 
+// //home route
+// app.get("/", (req,res) =>{
+//     res.json({
+//         name: "mo tw jason tera po xuu  guys!"
+//     })
+// })
+
+
+// //server
+// app.listen(300, () =>{
+//     console.log("total json used vaxa browser maa ")
+// })
+
+
+
+
+//ANOTHER JSON USED METHOD 
+const express = require("express")
+const app = express()
+
 //home route
-app.get("/", (req,res) =>{
+app.get("/home", (req,res) =>{
     res.json({
-        name: "mo tw jason tera po xuu  guys!"
+        class: 10,
+        subject: "math",
+        topic: "algebra"
     })
 })
 
-
-//server
-app.listen(300, () =>{
-    console.log("total json used vaxa browser maa ")
+//json route
+app.get("/about", (req,res) =>{
+    res.json({
+        name: "amrit",
+        age:21,
+        city: "ktm"
+    })
 })
 
-
+//server
+app.listen(3131, () =>{
+    console.log("hame vee kyaa kom hyaaa")
+})
 
