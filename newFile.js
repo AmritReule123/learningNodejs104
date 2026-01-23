@@ -41,24 +41,40 @@
 
 
 
-const app = require("express") ()
+// const app = require("express") ()
 
-// home route (text)
+// // home route (text)
+// app.get("/", (req,res) =>{
+//     res.send("this is a home route not changed automatically")
+// })
+
+
+// //json route 
+// app.get("/json", (req,res) =>{
+//     res.json({
+//         name: "amrit",
+//         age: 21,
+//         city: "kathmandu"
+//     })
+// })
+
+// //server
+// app.listen(2000, () =>{
+//     console.log("oh my god1")
+// })
+
+
+const app = require("express")()
+
+// home route
 app.get("/", (req,res) =>{
-    res.send("this is a home route not changed automatically")
-})
-
-
-//json route 
-app.get("/json", (req,res) =>{
     res.json({
-        name: "amrit",
-        age: 21,
-        city: "kathmandu"
+        manish: "mo loe browser maa khola"
+        
     })
 })
 
 //server
-app.listen(2000, () =>{
-    console.log("oh my god1")
+app.listen(1021, () =>{
+    console.log("i am a ruuniiing code!")
 })

@@ -29,16 +29,40 @@ const app = require("express")()
 //     })
 
 
+
+// correct method used in node js
+
 // home route 
-app.get("/", (req,res) => {
-    res.send("this is a home route request!")
+// app.get("/", (req,res) => {
+//     res.send("this is a home route request!")
+// })
+
+// // hero route 
+// app.get("/hero", (req,res) => {
+// })
+
+// // server 
+// app.listen(3000, () =>{
+//     console.log("Enter any change your code automatically 300")
+// })
+
+
+
+
+
+//JSON USED 
+//home route
+app.get("/", (req,res) =>{
+    res.json({
+        name: "mo tw jason tera po xuu  guys!"
+    })
 })
 
-// hero route 
-app.get("/hero", (req,res) => {
+
+//server
+app.listen(300, () =>{
+    console.log("total json used vaxa browser maa ")
 })
 
-// server 
-app.listen(3000, () =>{
-    console.log("Enter any change your code automatically 300")
-})
+
+
