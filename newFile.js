@@ -17,18 +17,48 @@
 // })
 
 
-const app = require("express")()
-//home router
+
+
+
+
+// const app = require("express")()
+
+// app.get("/", (req,res) =>{
+//     res.send("this is a home page!")
+// })
+
+// //
+// app.get("/rammmm ", (hari,res) =>{
+//     hari.send("mo tw router hoo")
+// })
+
+
+// app.listen(155, () =>{
+//     console.log("mo tw run   dsd  dsf dsfds ds f shunnxuu")
+// })
+
+
+
+
+
+const app = require("express") ()
+
+// home route (text)
 app.get("/", (req,res) =>{
-    res.send("this a home router")
+    res.send("this is a home route not changed automatically")
 })
 
-//hero server
-app.get("/rajan",(req,myname) =>{
-    myname.send("sdf fsdf dsf")
 
+//json route 
+app.get("/json", (req,res) =>{
+    res.json({
+        name: "amrit",
+        age: 21,
+        city: "kathmandu"
+    })
 })
 
-app.listen(1212, () =>{
-    console.log("I am totally changed now1")
+//server
+app.listen(2000, () =>{
+    console.log("oh my god1")
 })
