@@ -75,8 +75,8 @@ const app = express()
 app.get("/home", (req,res) =>{
     res.json({
         class: 10,
-        subject: "math",
-        topic: "algebra"
+        subject: "science",
+        topic: "Gravity"
     })
 })
 
@@ -91,6 +91,6 @@ app.get("/about", (req,res) =>{
 
 //server
 app.listen(3131, () =>{
-    console.log("hame vee kyaa kom hyaaa")
+    console.log("Gravitational force ")
 })
 
