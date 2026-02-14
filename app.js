@@ -1,96 +1,42 @@
-// const app = require("express")()
-
-//Alternative 
-//const express = require("express)
-//cost app = express()
-
-
-// request and response Arrow function
-// app.get("/", (req,res)=>{
-//     res.send("this is  a error function in node js ")
-// })
-
-// app.listen(2000, (req,res)=>{
-// console.log("nodejs is a permant language")
-// })
-
-
-// request and response normal function
-// app.get("/", (hello,bye)=>{
-//     bye.send("this is a new metod used in node js")
-// })
-
-// app.get("/hero")
-
-
-// // 2000 number ko room chae use gar  yo project run garna
-// app.listen(3000,(req,res)=>{
-//     console.log("i am a node js running in 3000 room")
-//     })
-
-
-
-// correct method used in node js
-
-// home route 
-// app.get("/", (req,res) => {
-//     res.send("this is a home route request!")
-// })
-
-// // hero route 
-// app.get("/hero", (req,res) => {
-// })
-
-// // server 
-// app.listen(3000, () =>{
-//     console.log("Enter any change your code automatically 300")
-// })
-
-
-
-
-
-//JSON USED 
-// //home route
-// app.get("/", (req,res) =>{
-//     res.json({
-//         name: "mo tw jason tera po xuu  guys!"
-//     })
-// })
-
-
-// //server
-// app.listen(300, () =>{
-//     console.log("total json used vaxa browser maa ")
-// })
-
-
-
-
-//ANOTHER JSON USED METHOD 
-const express = require("express")
+const express = require("express")  
 const app = express()
 
-//home route
-app.get("/home", (req,res) =>{
+require("./backend/connection");
+
+////GET COLLEGE
+app.get("/college", function(req,res){
     res.json({
-        class: 10,
-        subject: "science",
-        topic: "Gravity"
+        message: "college are successfully!"
     })
 })
 
-//json route
-app.get("/about", (req,res) =>{
+
+//POST COLLEGE
+app.post("/college", function(req,res){
     res.json({
-        name: "amrit",
-        age:21,
-        city: "ktm"
+        message: "college post are added"
     })
 })
 
-//server
-app.listen(3131, () =>{
-    console.log("Gravitational force ")
+
+
+//DELETE COLLEGE
+app.delete("/college/:id", function(req,res){
+
+res.json({
+    message: "this messages are automatically deleted"
+})
 })
 
+
+// PATCH COLLEGE
+app.patch("/college/:id", function(req,res){
+    res.json({
+        message: ("Books are patched are obeviously")
+    })
+})
+
+
+app.listen(1323, ()=>{
+    console.log("server running on port 1323")
+})

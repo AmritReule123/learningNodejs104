@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 
-app.get("/", (req,res)=>{
+app.get("/home", (req,res)=>{
     res.json({
         name: "sita",
         city: "pokhara",
@@ -49,6 +49,6 @@ app.patch("/about/:patch", (req,res)=>{
 })
 
 
-app.listen(1111, ()=>{
-    console.log("this port are usually work in browser 1111")
+app.listen(2325, ()=>{
+    console.log("this port are usually work in browser 2325")
 })
